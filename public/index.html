@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="ContactListApp">
+    <head>
+        <title>Contact list with Mean Stack</title>
+        <script type="text/javascript" src="angular.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap-theme.css">
+        <script>
+            angular.module("ContactListApp",[]);
+        </script>
+         <script type="text/javascript" src="controllers.js"></script>
+    </head>
+    <body ng-controller="mainCtrl">
+        <div class="container">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr><th>Name</th><th>E-mail</th><th>phone number</th><th>Action</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="form-control" type="text" name="name" ng-model="contact.name"></td>
+                       <td><input class="form-control" type="text" name="email" ng-model="contact.email"></td>
+                       <td><input class="form-control" type="text" name="number" ng-model="contact.number"></td>
+                       <td>
+                        <button class="btn btn-primary" ng-click="addContact()" ng-if="!editing">Add Contact</button>
+                        <button class="btn btn-primary" ng-click="editContact()" ng-if="editing">Update</button>
+                        <button class="btn btn-primary" ng-click="clear()" ng-if="editing">cancel</button>   
+                    </td>
+                    </tr>
+                    <tr ng-repeat="p in persons">
+                        <td>{{p.name}}</td>
+                        <td>{{p.email}}</td>
+                        <td>{{p.number}}</td>
+                        <td>
+                            <button class="btn btn-warning" ng-click="startEditContact(p._id)">Edit</button>
+                            <button class="btn btn-danger" ng-click="removeContact(p._id)">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-primary" ng-click="loadData()">Get Data</button>
+        </div>
+    </body>
+</html>
