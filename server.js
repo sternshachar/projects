@@ -1,7 +1,7 @@
 /* --- Setting up an express server --- */
 var express = require('express');
-var app = express();
 var contactlist = require('./routes/contactlist');
+var app = express();
 app.use('/contactlist', contactlist);
 app.use(express.static('public'));
 app.listen(8080);
