@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
-router.use(bodyParser);
+router.use(bodyParser());
 
 router.route('/')
 	.get(function(request,response){
@@ -41,3 +41,5 @@ router.route("/:id")
 		Person.find({ _id : id}).remove().exec();
 		response.json(id);
 	});
+
+	module.exports = router;
