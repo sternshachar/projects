@@ -18,7 +18,7 @@ router.use(passport.initialize());
 router.use(passport.session());
 
 passport.use(new passportLocal(function(username,password,done){
-	User.find({"name": username },function(err,user){
+	User.findOne({"name": username },function(err,user){
 		console.log(user);
 		if(err) return console.error(err);
 		console.log(user.name + password);
