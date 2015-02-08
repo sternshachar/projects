@@ -18,9 +18,9 @@ router.use(passport.initialize());
 router.use(passport.session());
 
 passport.use(new passportLocal(function(username,password,done){
-	console.log(username + password);
 	User.find({"name": username },function(err,user){
 		var user_parsed = JSON.parse(user);
+		console.log(user_parsed);
 		if(err) return console.error(err);
 		console.log(user_parsed.password + password);
 		if(user_parsed.password == password){
