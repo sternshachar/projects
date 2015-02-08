@@ -26,7 +26,7 @@ passport.use(new passportLocal(function(username,password,done){
 }));
 
 router.get('/home', function(request,response){
-	response.render('../index',{
+	response.json({
 		isAuthenticated: request.isAuthenticated(), 
 		usr: request.user
 	});
