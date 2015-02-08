@@ -19,7 +19,7 @@ var personsSchema = [];
 var person = [];
 
 var usersSchema = [];
-var User = [];
+var user = [];
 
 db.once('open', function(callback){
 	console.log('Connected to mongoDB!');
