@@ -26,10 +26,12 @@ passport.use(new passportLocal(function(username,password,done){
 }));
 
 passport.serializeUser(function(user,done){
+	console.log('serial works');
 	done(user.id);
 });
 
 passport.deserializeUser(function(id,done){
+	console.log('deserial works');
 	done({id: id, name: id});
 });
 
@@ -75,9 +77,8 @@ router.route("/:id")
 router.route("/login")
 	.post(passport.authenticate('local'), function(request,response){
 		//console.log(request.body);
-		response.send(
-		//{isAuthenticated: request.isAuthenticated()}
-		'work'
+		response.json(
+			{isAuthenticated: request.isAuthenticated()}
 		);
 	});
 
