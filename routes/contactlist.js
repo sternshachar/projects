@@ -21,7 +21,7 @@ passport.use(new passportLocal(function(username,password,done){
 	console.log(username + password);
 	User.find({"name": username },function(err,user){
 		if(err) return console.error(err);
-		console.log(user);
+		console.log(user.password + password);
 		if(user.password == password){
 			console.log('found');
 			done(null,{id: user._id ,name: username});
