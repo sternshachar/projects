@@ -17,7 +17,7 @@ router.use(expressSession({
 router.use(passport.initialize());
 router.use(passport.session());
 
-var passlocal = new passportLocal;
+var passlocal = new passportLocal.strategy();
 
 passport.use(passlocal.strategy(function(username,password,done){
 	if(username === password){
