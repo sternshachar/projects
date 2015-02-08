@@ -18,6 +18,9 @@ db.on('error', console.error.bind(console,'connection error: '));
 var personsSchema = [];
 var person = [];
 
+var usersSchema = [];
+var User = [];
+
 db.once('open', function(callback){
 	console.log('Connected to mongoDB!');
 /* --- Setting contactlist collection with Schema --- */
