@@ -18,11 +18,19 @@ router.use(passport.initialize());
 router.use(passport.session());
 
 passport.use(new passportLocal(function(username,password,done){
-	if(username === password){
-		 done(null,{id: 123, name: username});
-	} else {
-		done(null,null);
-	}
+	User.find({name: username},function(err,user){
+		if(err) return console.error(err);
+		if(user.password == password){
+			done(null,{id: user._id namd: username});
+		} else{
+			done(null,null);
+		}
+	});
+	// if(username === password){
+	// 	 done(null,{id: 123, name: username});
+	// } else {
+	// 	done(null,null);
+	// }
 }));
 
 passport.serializeUser(function(user,done){

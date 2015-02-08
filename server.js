@@ -23,6 +23,9 @@ db.once('open', function(callback){
 /* --- Setting contactlist collection with Schema --- */
 	 personsSchema = mongoose.Schema({ name: String, email: String, number: String},{collection: 'contactlist'});
 	 Person = mongoose.model('contactlist',personsSchema);
+
+	 usersSchema = mongoose.Schema({ name: String, password: String},{collection: 'users'});
+	 User = mongoose.model('users',usersSchema);
 /* --- end of contactlist setup --- */
 });
 /* --- End of mongoose connection setup --- */
