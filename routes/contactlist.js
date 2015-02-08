@@ -75,9 +75,10 @@ router.route("/:id")
 router.route("/login")
 	.post(passport.authenticate('local'), function(request,response){
 		//console.log(request.body);
-		response.json({
-			isAuthenticated: request.isAuthenticated()
-		});
+		response.send(
+		//{isAuthenticated: request.isAuthenticated()}
+		'work'
+		);
 	});
 
 	module.exports = router;
