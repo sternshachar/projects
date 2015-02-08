@@ -80,7 +80,7 @@ router.route("/:id")
 	});
 
 router.route("/login")
-	.post(passport.authenticate('local'), function(request,response){
+	.post( function(request,response){
 		console.log(response.body.username);
 		response.redirect('/');
 	});
