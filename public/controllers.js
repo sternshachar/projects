@@ -15,6 +15,13 @@ angular.module("ContactListApp")
 				});
 		};
 
+		$scope.logout = function(){
+			$http.get($scope.dataUrl + ":8080/contactlist/logout")
+				.success(function(data){
+					$scope.isAuth = data.isAuthenticated;
+				});
+		};
+
 		$scope.loadData = function(){
 			$http.get($scope.dataUrl + ":8080/contactlist").success(function(data){
 				$scope.persons = data;

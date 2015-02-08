@@ -40,11 +40,12 @@
                 </tbody>
             </table>
             <button class="btn btn-primary" ng-click="loadData()" ng-if="isAuth">Get Data</button>
-            <div class="form-group">
+            <div class="form-group" ng-if="!isAuth">
                 <input type="text" name="name" ng-model="usr.username" placeholder="username">
                 <input type="password" name="name" ng-model="usr.password" placeholder="password">
                 <button class="btn btn-primary" ng-click="login()">Log in</button>
             </div>
+            <button ng-click="logout()" ng-if="isAuth">Log out</button>
         </div>
     </body>
 </html>
