@@ -1,6 +1,6 @@
 angular.module("ContactListApp")
 	.controller("mainCtrl", function($scope,$http){
-		$scope.username = [];
+		$scope.username = "";
 		$scope.isAuth = false;
 		$scope.persons = [];
 		$scope.editing = false;
