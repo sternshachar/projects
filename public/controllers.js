@@ -11,7 +11,7 @@ angular.module("ContactListApp")
 		$scope.login = function(){
 			$http.post($scope.dataUrl + ":8080/contactlist/login",$scope.usr)
 				.success(function(data){
-					console.log(data);
+					$scope.isAuth = data.isAuthenticated;
 				});
 		};
 
