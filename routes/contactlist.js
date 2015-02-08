@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var expressSession = require('express-session');
 
-router.use(bodyParser.urlencoded({extended: false}));
+router.use(bodyParser());
 router.use(cookieParser());
 router.use(expressSession({
  	secret: process.env.SESSION_SECRET || 'secret',
@@ -80,7 +80,7 @@ router.route("/:id")
 	});
 
 router.route("/login")
-	.post( function(request,response){
+	.post(function(request,response){
 		console.log(request.body);
 		response.redirect('/');
 	});
