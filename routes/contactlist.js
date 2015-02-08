@@ -17,13 +17,15 @@ router.use(expressSession({
 router.use(passport.initialize());
 router.use(passport.session());
 
-passport.use(new passportLocal.strategy(function(username,password,done){
+var strategy = new passportLocal.strategy(function(username,password,done){
 	if(username === password){
 		 done(null,{id: 123, name: username});
 	} else {
 		done(null,null);
 	}
-}));
+})
+
+passport.use(strategy());
 
 router.get('/home', function(request,response){
 	response.render('../index',{
