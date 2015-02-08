@@ -14,6 +14,7 @@ angular.module("ContactListApp")
 				.success(function(data){
 					$scope.isAuth = data.isAuthenticated;
 					$scope.username = data.user.name;
+					console.log($scope.username);
 				});
 		};
 
