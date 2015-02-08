@@ -27,12 +27,12 @@ passport.use(new passportLocal(function(username,password,done){
 
 passport.serializeUser(function(user,done){
 	console.log('serial works');
-	done(user.id);
+	done(null, user.id);
 });
 
 passport.deserializeUser(function(id,done){
 	console.log('deserial works');
-	done({id: id, name: id});
+	done(null, {id: id, name: id});
 });
 
 router.route('/')
