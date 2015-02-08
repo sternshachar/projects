@@ -37,7 +37,7 @@ passport.deserializeUser(function(id,done){
 
 router.route('/')
 	.get(function(request,response){
-		if(request.isAuthenticated){
+		if(request.isAuthenticated == true){
 			Person.find(function(err,persons){
 				if(err) return console.error(err);
 				console.log(persons);
