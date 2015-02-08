@@ -41,10 +41,15 @@
             </table>
             <button class="btn btn-primary" ng-click="loadData()" ng-if="isAuth">Get Data</button>
             <div class="form-group" ng-if="!isAuth">
-                <input type="text" name="name" ng-model="usr.username" placeholder="username">
-                <input type="password" name="name" ng-model="usr.password" placeholder="password">
-                <button class="btn btn-primary" ng-click="login()">Log in</button>
+                <label for="name">User name:</label>
+                <input type="text" name="name" ng-model="usr.username" placeholder="username"> 
             </div>
+            <div class="form-group" ng-if="!isAuth">
+                <label for="password">Password:</label>
+                <input type="password" name="name" ng-model="usr.password" placeholder="password">
+            </div>
+            <button class="btn btn-primary" ng-click="login()">Log in</button>
+            
             <button ng-click="logout()" ng-if="isAuth">Log out</button>
         </div>
     </body>
