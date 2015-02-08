@@ -77,7 +77,7 @@ router.route("/login")
 		//console.log(request.body);
 		response.json({
 			isAuthenticated: request.isAuthenticated(), 
-			usr: request.username
+			usr: request.session.passport.user
 		});
 	});
 
