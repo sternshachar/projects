@@ -1,5 +1,6 @@
 angular.module("ContactListApp")
 	.controller("mainCtrl", function($scope,$http){
+		$scope.username = [];
 		$scope.isAuth = false;
 		$scope.persons = [];
 		$scope.editing = false;
@@ -12,6 +13,7 @@ angular.module("ContactListApp")
 			$http.post($scope.dataUrl + ":8080/contactlist/login",$scope.usr)
 				.success(function(data){
 					$scope.isAuth = data.isAuthenticated;
+					$scope.username = data.user.name;
 				});
 		};
 
