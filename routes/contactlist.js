@@ -1,7 +1,21 @@
 var express = require('express');
+var passport = require('passport');
+var passportLocal = require('passport-local');
 var router = express.Router();
 var bodyParser = require('body-parser');
-router.use(bodyParser());
+var cookieParser = require('cookie-parser');
+var expressSession = require('express-session');
+
+router.use(bodyParser.urlencoded({extended: false}));
+router.use(cookieParser());
+router.use(expressSession({
+ 	secret: procces.env.SESSION_SECRET || 'secret',
+ 	resave: false,
+ 	saveUninitialized: false
+}));
+
+router.use(passport.initialize());
+router.use(passport.session());
 
 router.route('/')
 	.get(function(request,response){

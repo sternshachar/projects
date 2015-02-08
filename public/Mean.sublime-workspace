@@ -1,0 +1,839 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"con",
+				"contactlist"
+			],
+			[
+				"r",
+				"route"
+			],
+			[
+				"roue",
+				"router"
+			],
+			[
+				"bod",
+				"bodyParser"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"rou",
+				"route"
+			],
+			[
+				"blo",
+				"blocks"
+			],
+			[
+				"co",
+				"cors"
+			],
+			[
+				"bloc",
+				"blocks"
+			],
+			[
+				"bo",
+				"bodyParser"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"item",
+				"items"
+			],
+			[
+				"li",
+				"limit"
+			],
+			[
+				"w",
+				"write"
+			],
+			[
+				"get",
+				"getTime"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
+				"pro",
+				"promiseWorker"
+			],
+			[
+				"bu",
+				"buttonText"
+			],
+			[
+				"cac",
+				"cancel"
+			],
+			[
+				"c",
+				"carouselInterval"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ca",
+				"carousel-caption"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"ng",
+				"ng-view"
+			],
+			[
+				"p",
+				"position"
+			],
+			[
+				"o",
+				"opacity"
+			],
+			[
+				"a",
+				"active"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"ac",
+				"active"
+			],
+			[
+				"n",
+				"newsGroups"
+			],
+			[
+				"ta",
+				"tabsMain"
+			],
+			[
+				"json",
+				"jsonData"
+			],
+			[
+				"data",
+				"dataService"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"sta",
+				"staff"
+			],
+			[
+				"new",
+				"newsTabs"
+			],
+			[
+				"s",
+				"staffMenu"
+			],
+			[
+				"about",
+				"aboutTabs"
+			],
+			[
+				"abou",
+				"aboutTabs"
+			],
+			[
+				"staffT",
+				"staffTabs"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"e",
+				"expressionFn"
+			],
+			[
+				"loc",
+				"locationProvider"
+			],
+			[
+				"log",
+				"logServices"
+			],
+			[
+				"city",
+				"cityFn"
+			],
+			[
+				"scop",
+				"scopeTemplate"
+			],
+			[
+				"panel",
+				"panel-body"
+			],
+			[
+				"lis",
+				"listTemplate"
+			],
+			[
+				"te",
+				"template"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"angul",
+				"angularRegion"
+			],
+			[
+				"cl",
+				"clickCounter"
+			],
+			[
+				"ch",
+				"changeCase"
+			],
+			[
+				"ZipC",
+				"zipCodes"
+			],
+			[
+				"zip",
+				"zipCodeUpdated"
+			],
+			[
+				"b",
+				"broadcast"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"pre",
+				"pre-line"
+			],
+			[
+				"לק",
+				"לקוחות"
+			],
+			[
+				"is",
+				"isTabOneActive"
+			],
+			[
+				"se",
+				"selectedTab"
+			],
+			[
+				"m",
+				"message"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"st",
+				"startTime"
+			],
+			[
+				"now",
+				"nowValue"
+			],
+			[
+				"ge",
+				"getDay"
+			],
+			[
+				"g",
+				"getDay"
+			],
+			[
+				"da",
+				"dayNames"
+			],
+			[
+				"sc",
+				"scope"
+			],
+			[
+				"ore",
+				"order"
+			],
+			[
+				"or",
+				"order"
+			],
+			[
+				"order",
+				"orderUrl"
+			],
+			[
+				"car",
+				"cart"
+			],
+			[
+				"dat",
+				"dataUrl"
+			],
+			[
+				"i",
+				"isNumber"
+			],
+			[
+				"sec",
+				"selectedPage"
+			],
+			[
+				"sel",
+				"selectedPage"
+			],
+			[
+				"cu",
+				"customFilters"
+			],
+			[
+				"pr",
+				"Product"
+			],
+			[
+				"todo",
+				"todoApp"
+			],
+			[
+				"action",
+				"actionText"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"f",
+				"features"
+			],
+			[
+				"si",
+				"simpleFactory"
+			],
+			[
+				"sim",
+				"SimpleController"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"S",
+				"SimpleController"
+			],
+			[
+				"h",
+				"head	Tag"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"active",
+				"active_practice"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"ab",
+				"about"
+			],
+			[
+				"error",
+				"error_reporting"
+			],
+			[
+				"del",
+				"delete_list"
+			],
+			[
+				"connec",
+				"connect"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"file_",
+				"file_get_contents"
+			],
+			[
+				"php_",
+				"php_scripts"
+			],
+			[
+				"bore",
+				"border-radius"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"size",
+				"font-size"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"j",
+				"javascript"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"list",
+				"list-style-type"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/stern/Documents/gitProjects/projects/server.js",
+			"settings":
+			{
+				"buffer_size": 987,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/stern/Documents/gitProjects/projects/routes/contactlist.js",
+			"settings":
+			{
+				"buffer_size": 1130,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controllers.js",
+			"settings":
+			{
+				"buffer_size": 2096,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 50.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/usr/local/bin/public/logger.js",
+		"/Users/stern/Documents/royAngular/includes/css/styles.css",
+		"/Users/stern/Documents/royAngular/views/navigation.html",
+		"/Users/stern/Documents/royAngular/app.html",
+		"/Users/stern/Documents/royAngular/views/footer.html",
+		"/usr/local/bin/angularjs/promises.html",
+		"/usr/local/bin/angularjs/ajax.html",
+		"/Users/stern/Documents/royAngular/views/practice.html",
+		"/Users/stern/Documents/royAngular/views/about.html",
+		"/Users/stern/Documents/royAngular/views/accordion.html",
+		"/Users/stern/Documents/royAngular/views/news.html",
+		"/Users/stern/Documents/royAngular/views/carousel.html",
+		"/Users/stern/Documents/royAngular/views/contact.html",
+		"/Users/stern/Documents/royAngular/views/staff.html",
+		"/Users/stern/Documents/royAngular/views/logIn.html",
+		"/Users/stern/Documents/royAngular/views/signUp.html",
+		"/usr/local/bin/angularjs/directives.html",
+		"/usr/local/bin/angularjs/directivesScope.html",
+		"/usr/local/bin/angularjs/itemTemplate.html",
+		"/usr/local/bin/angularjs/tableTamplate.html",
+		"/usr/local/bin/angularjs/temp/filters.html",
+		"/usr/local/bin/angularjs/forms.html",
+		"/Users/stern/Documents/package.json",
+		"/Users/stern/Documents/royAngular/includes/css/contact.html",
+		"/usr/local/bin/angularjs/views/productList.html",
+		"/usr/local/bin/angularjs/components/cart/cart.js",
+		"/usr/local/bin/angularjs/controllers/productListControllers.js",
+		"/usr/local/bin/angularjs/filters/customFilters.js",
+		"/usr/local/bin/angularjs/ngmodules/app.html",
+		"/usr/local/bin/angularjs/todo.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/Angularjs/view_controller_scope.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/Angularjs/controller_routes.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/Roy/js/content.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/Roy/js/roy_app.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/Roy/css/roy_css.css",
+		"/Users/stern/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Applications/XAMPP/xamppfiles/htdocs/myTasks/bootstrap.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/myTasks/register.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/dev/tests/people.json",
+		"/Applications/XAMPP/xamppfiles/htdocs/dev/tests/test1.php",
+		"/Users/stern/Sites/Roy Site/pages/roy_home.php",
+		"/Users/stern/Sites/Roy Site/php_scripts/Footer_Script.php",
+		"/Users/stern/Sites/Roy Site/pages/roy_principles.php",
+		"/Users/stern/Sites/Roy Site/php_scripts/PageTop.php",
+		"/Users/stern/Sites/Roy Site/php_scripts/password_protect.php",
+		"/Users/stern/Sites/Roy Site/css scripts/roy_css.css",
+		"/Users/stern/Sites/Roy Site/pages/roy_contact.php",
+		"/Users/stern/Sites/Roy Site/PageTop.php",
+		"/Users/stern/Sites/Roy Site/roy_press.php",
+		"/Users/stern/Sites/Roy Site/roy_press.css",
+		"/Users/stern/Sites/Roy Site/Footer_Script.php",
+		"/Users/stern/Documents/Roy Site/roy_principles.css",
+		"/Users/stern/Documents/Roy Site/roy_principles.html",
+		"/Users/stern/Documents/Roy Site/roy_press.css",
+		"/Users/stern/Documents/Roy Site/roy_press.html",
+		"/Users/stern/Documents/Roy Site/roy_contact_css.css",
+		"/Users/stern/Documents/Roy Site/roy_contact.php",
+		"/Users/stern/Documents/Roy Site/roy_contact.html",
+		"/Users/stern/Documents/Roy Site/royapp.js",
+		"/Users/stern/Documents/Roy Site/roy_home.html",
+		"/Users/stern/Documents/Roy Site/roy_css.css",
+		"/Users/stern/Documents/roy_home.html",
+		"/Users/stern/Documents/roy_css.css",
+		"/Users/stern/Documents/roy_app.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"app",
+			"dirtection",
+			"left",
+			"both",
+			"true",
+			"newsTabs",
+			"newsTabs1",
+			"$scope",
+			"name",
+			"aboutTabs",
+			"practiceTabs",
+			"0",
+			"practiceTabs",
+			"debugLogger",
+			"changeCase",
+			"h1",
+			"group",
+			"isTabTwoActive",
+			"isTabOneActive",
+			"activeTab",
+			"ui.bootstrap.demo",
+			"actionText",
+			"myApp",
+			"\"></",
+			"myApp",
+			"personName",
+			"names",
+			"featuresHeading",
+			"xs",
+			"12",
+			"xs",
+			"result",
+			"f9fA00"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/stern/Documents/gitProjects/projects/server.js",
+					"settings":
+					{
+						"buffer_size": 987,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/stern/Documents/gitProjects/projects/routes/contactlist.js",
+					"settings":
+					{
+						"buffer_size": 1130,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1130,
+								1130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 2270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								242,
+								242
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "controllers.js",
+					"settings":
+					{
+						"buffer_size": 2096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.536743735374,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
