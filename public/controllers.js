@@ -9,7 +9,6 @@ angular.module("ContactListApp")
 		console.log(angular.equals($scope.contact,{}));
 
 		$scope.login = function(){
-			console.log($scope.usr);
 			$http.post($scope.dataUrl + ":8080/contactlist/login",$scope.usr)
 				.success(function(data){
 					console.log(data);

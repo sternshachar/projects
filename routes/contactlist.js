@@ -33,13 +33,6 @@ passport.deserializeUser(function(id,done){
 	done({id: id, name: id});
 });
 
-router.get('/home', function(request,response){
-	response.json({
-		isAuthenticated: request.isAuthenticated(), 
-		usr: request.user
-	});
-});
-
 router.route('/')
 	.get(function(request,response){
 		Person.find(function(err,persons){
@@ -81,10 +74,10 @@ router.route("/:id")
 
 router.route("/login")
 	.post(passport.authenticate('local'), function(request,response){
-		console.log(request.body.username);
+		//console.log(request.body);
 		response.json({
 			isAuthenticated: request.isAuthenticated(), 
-			usr: request.user
+			usr: request.username
 		});
 	});
 
