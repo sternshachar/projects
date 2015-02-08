@@ -9,7 +9,7 @@ var expressSession = require('express-session');
 router.use(bodyParser.urlencoded({extended: false}));
 router.use(cookieParser());
 router.use(expressSession({
- 	secret: procces.env.SESSION_SECRET || 'secret',
+ 	secret: process.env.SESSION_SECRET || 'secret',
  	resave: false,
  	saveUninitialized: false
 }));
