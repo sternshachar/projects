@@ -28,6 +28,7 @@ angular.module("ContactListApp")
 			$http.get($scope.dataUrl + ":8080/contactlist/logout")
 				.success(function(data){
 					$scope.isAuth = data.isAuthenticated;
+					$scope.username = "";
 				});
 		};
 

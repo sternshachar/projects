@@ -37,11 +37,15 @@ passport.deserializeUser(function(id,done){
 
 router.route('/')
 	.get(function(request,response){
-		Person.find(function(err,persons){
-			if(err) return console.error(err);
-			console.log(persons);
-			response.json(persons);
-		});
+		if(request.isAuthenticated){
+			Person.find(function(err,persons){
+				if(err) return console.error(err);
+				console.log(persons);
+				response.json(persons);
+			});
+		} else {
+			response.send('Not Authorized!')
+		}
 	})
 	.post(function(request,response){
 	var newContact = request.body;
