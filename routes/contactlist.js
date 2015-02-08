@@ -81,7 +81,7 @@ router.route("/:id")
 
 router.route("/login")
 	.post( function(request,response){
-		console.log(response.body);
+		console.log(request.body);
 		response.redirect('/');
 	});
 
