@@ -22,9 +22,9 @@ passport.use(new passportLocal(function(username,password,done){
 	User.find({name: username},function(err,user){
 		if(err) return console.error(err);
 		if(user.password == password){
-			console.log(password + user.password);
 			done(null,{id: user._id ,name: username});
 		} else{
+			console.log(password + user.password);
 			done(null,null);
 		}
 	});
