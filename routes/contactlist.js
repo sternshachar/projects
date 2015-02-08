@@ -1,6 +1,6 @@
 var express = require('express');
 var passport = require('passport');
-var passportLocal = require('passport-local');
+var passportLocal = require('passport-local').strategy;
 var router = express.Router();
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
@@ -17,9 +17,7 @@ router.use(expressSession({
 router.use(passport.initialize());
 router.use(passport.session());
 
-var passlocal = new passportLocal.strategy();
-
-passport.use(passlocal.strategy(function(username,password,done){
+passport.use( passportLocal(function(username,password,done){
 	if(username === password){
 		 done(null,{id: 123, name: username});
 	} else {
