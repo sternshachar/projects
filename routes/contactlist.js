@@ -25,6 +25,14 @@ passport.use(new passportLocal(function(username,password,done){
 	}
 }));
 
+passport.serializeUser(function(user,done){
+	done(user.id);
+});
+
+passport.deserializeUser(function(id,done){
+	done({id: id, name: id});
+});
+
 router.get('/home', function(request,response){
 	response.json({
 		isAuthenticated: request.isAuthenticated(), 
