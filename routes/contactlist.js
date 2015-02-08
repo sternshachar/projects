@@ -83,6 +83,14 @@ router.route("/login")
 				user: request.user
 			}
 		);
+	})
+	.get(function(request,response){
+		response.json(
+			{
+				isAuthenticated: request.isAuthenticated(),
+				user: request.user
+			}
+		);
 	});
 
 router.route("/logout")
