@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
-var passport = require('./passport');
+var passport = require('./authenticate');
 
 
 router.use(bodyParser());
