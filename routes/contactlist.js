@@ -20,11 +20,12 @@ router.use(passport.session());
 passport.use(new passportLocal(function(username,password,done){
 	console.log(username + password);
 	User.find({"name": username },function(err,user){
+		var user_parsed = JSON.parse(user);
 		if(err) return console.error(err);
-		console.log(user.name + password);
-		if(user.password == password){
+		console.log(user_parsed.password + password);
+		if(user_parsed.password == password){
 			console.log('found');
-			done(null,{id: user._id ,name: username});
+			done(null,{id: user_parsed._id ,name: username});
 		} else{
 			console.log('not found');
 			done(null,null);
