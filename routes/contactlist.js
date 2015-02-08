@@ -83,7 +83,7 @@ router.route("/login")
 	});
 
 router.route("/logout")
-	.get(passport.authenticate('local'), function(request,response){
+	.get(function(request,response){
 		request.logout();
 		response.json(
 			{isAuthenticated: request.isAuthenticated()}
