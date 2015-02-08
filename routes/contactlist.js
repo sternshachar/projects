@@ -1,10 +1,8 @@
 var express = require('express');
-var passport = require('passport');
-var passportLocal = require('passport-local').Strategy;
 var router = express.Router();
 var bodyParser = require('body-parser');
-var cookieParser = require('cookie-parser');
-var expressSession = require('express-session');
+var passport = require('./routes/authenticate');
+
 
 router.use(bodyParser());
 router.use(cookieParser());
@@ -16,38 +14,6 @@ router.use(expressSession({
 
 router.use(passport.initialize());
 router.use(passport.session());
-
-passport.use(new passportLocal(function(username,password,done){
-	User.findOne({"name": username },function(err,user){
-		console.log(user);
-		if(err) return console.error(err);
-		if(!(user == undefined) && user.password == password){
-			console.log('found');
-			done(null,{id: user._id ,name: username});
-		} else{
-			console.log('not found');
-			done(null,null);
-		}
-	});
-	// if(username === password){
-	// 	 done(null,{id: 123, name: username});
-	// } else {
-	// 	done(null,null);
-	// }
-}));
-
-passport.serializeUser(function(user,done){
-	console.log('serial works');
-	done(null, user.id);
-});
-
-passport.deserializeUser(function(id,done){
-	console.log('deserial works');
-	User.findOne({"_id": id},function(err,user){
-		if(err) return console.error(err);
-		done(null, {id: id, name: user.name});
-	});
-});
 
 router.route('/')
 	.get(function(request,response){
