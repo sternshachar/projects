@@ -76,8 +76,7 @@ router.route("/login")
 	.post(passport.authenticate('local'), function(request,response){
 		//console.log(request.body);
 		response.json({
-			isAuthenticated: request.isAuthenticated(), 
-			usr: request.session.passport.user
+			isAuthenticated: request.isAuthenticated()
 		});
 	});
 
