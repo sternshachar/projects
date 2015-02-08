@@ -13,7 +13,7 @@
     <body ng-controller="mainCtrl">
         <div class="container">
             <h1>Contact List App with MEAN stack</h1>
-            <table class="table table-striped table-bordered">
+            <table class="table table-striped table-bordered" if="isAuth">
                 <thead>
                     <tr><th>Name</th><th>E-mail</th><th>phone number</th><th>Action</th></tr>
                 </thead>
@@ -39,7 +39,12 @@
                     </tr>
                 </tbody>
             </table>
-            <button class="btn btn-primary" ng-click="loadData()">Get Data</button>
+            <button class="btn btn-primary" ng-click="loadData()" if="isAuth">Get Data</button>
+            <div class="form-group">
+                <input type="text" name="name" ng-model="username" placehoder="username">
+                <input type="password" name="name" ng-model="password" placehoder="password">
+                <button class="btn btn-primary" ng-click="login()">Log in</button>
+            </div>
         </div>
     </body>
 </html>

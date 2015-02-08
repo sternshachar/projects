@@ -1,10 +1,15 @@
 angular.module("ContactListApp")
 	.controller("mainCtrl", function($scope,$http){
+		$scope.isAuth = false;
 		$scope.persons = [];
 		$scope.editing = false;
 		$scope.contact = {};
 		$scope.dataUrl = "http://ec2-54-149-202-99.us-west-2.compute.amazonaws.com";
 		console.log(angular.equals($scope.contact,{}));
+
+		$scope.login = function(){
+			console.log('login');
+		}
 
 		$scope.loadData = function(){
 			$http.get($scope.dataUrl + ":8080/contactlist").success(function(data){
