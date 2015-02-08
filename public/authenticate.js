@@ -1,7 +1,6 @@
 var passport = require('passport');
 var passportLocal = require('passport-local').Strategy;
-var cookieParser = require('cookie-parser');
-var expressSession = require('express-session');
+
 
 passport.use(new passportLocal(function(username,password,done){
 	User.findOne({"name": username },function(err,user){

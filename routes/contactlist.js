@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
+var expressSession = require('express-session');
 var passport = require('../public/authenticate');
 
 
