@@ -106,7 +106,7 @@ router.route("/login")
 		response.json(
 			{
 				isAuthenticated: request.isAuthenticated(),
-				user: request.user
+				user: request.user || ''
 			}
 		);
 	});
