@@ -27,4 +27,3 @@ db.once('open', function(callback){
 });
 /* --- End of mongoose connection setup --- */
 
-//comment to text nodemon

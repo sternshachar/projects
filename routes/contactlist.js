@@ -17,6 +17,21 @@ router.use(expressSession({
 router.use(passport.initialize());
 router.use(passport.session());
 
+passport.use(new passportLocal.strategy(function(username,password,done){
+	if(username === password){
+		 done(null,{id: 123, name: username})
+	} else {
+		done(null,null);
+	}
+}));
+
+router.get('/home', function(request,response){
+	response.render('../index',{
+		isAuthenticated: request.isAuthenticated(), 
+		usr: request.user
+	});
+});
+
 router.route('/')
 	.get(function(request,response){
 		Person.find(function(err,persons){
@@ -54,6 +69,11 @@ router.route("/:id")
 		var id = request.params.id;
 		Person.find({ _id : id}).remove().exec();
 		response.json(id);
+	});
+
+router.route("/login")
+	.post(passport.authenticate('local'), function(request,response){
+		response.redirect('/');
 	});
 
 	module.exports = router;
