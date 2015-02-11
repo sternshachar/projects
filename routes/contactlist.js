@@ -17,7 +17,7 @@ router.use(expressSession({
 router.use(passport.initialize());
 router.use(passport.session());
 
-app.use(function(req, res, next) {
+router.use(function(req, res, next) {
 
     console.log('-- session --');
     console.dir(req.session);
