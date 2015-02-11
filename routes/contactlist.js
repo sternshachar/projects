@@ -17,6 +17,20 @@ router.use(expressSession({
 router.use(passport.initialize());
 router.use(passport.session());
 
+app.use(function(req, res, next) {
+
+    console.log('-- session --');
+    console.dir(req.session);
+    console.log('-------------');
+    console.log('-- cookies --');
+    console.dir(req.cookies);
+    console.log('-------------');
+    console.log('-- signed cookies --');
+    console.dir(req.signedCookies);
+    console.log('-------------');
+    next()
+  });
+
 router.route('/')
 	.get(function(request,response){
 		if(request.isAuthenticated() == true){

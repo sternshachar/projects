@@ -6,7 +6,7 @@ angular.module("ContactListApp")
 		$scope.editing = false;
 		$scope.contact = {};
 		$scope.usr = {};
-		$scope.dataUrl = "http://ec2-54-149-245-194.us-west-2.compute.amazonaws.com";
+		$scope.dataUrl = "http://ec2-54-149-52-21.us-west-2.compute.amazonaws.com";
 		console.log(angular.equals($scope.contact,{}));
 
 		$http.get($scope.dataUrl + ":8080/contactlist/login")
